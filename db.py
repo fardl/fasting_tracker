@@ -1,8 +1,10 @@
 import duckdb
 from pathlib import Path
 
-DB_PATH = Path("data/fasting_tracker.db")
-DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+DATA_DIR = Path("data")
+DATA_DIR.mkdir(exist_ok=True)
+
+DB_PATH = DATA_DIR / "fasting_tracker.duckdb"
 
 def get_connection():
     return duckdb.connect(DB_PATH)
