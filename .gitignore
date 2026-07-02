@@ -1,1 +1,18 @@
-*fasting_tacker.db
+# DuckDB
+*.duckdb
+*.db
+*.wal
+
+# Python
+__pycache__/
+*.pyc
+
+# Entorno virtual
+.venv/
+venv/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# VSCode
+.vscode/
